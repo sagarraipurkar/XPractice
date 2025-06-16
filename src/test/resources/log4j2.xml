@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <!-- Console Appender -->
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level [%t] %c{2} (%F:%L) - %msg%n"/>
+    </Console>
+
+    <!-- File Appender -->
+    <File name="FileAppender" fileName="logs/app.log" append="true">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level [%t] %c{2} (%F:%L) - %msg%n"/>
+    </File>
+  </Appenders>
+
+  <Loggers>
+    <!-- If you really need this logger, make sure it exists -->
+    <Logger name="org.apache.log4j.xml" level="info" additivity="false">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="FileAppender"/>
+    </Logger>
+
+    <!-- Root Logger -->
+    <Root level="info">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="FileAppender"/>
+    </Root>
+  </Loggers>
+</Configuration>

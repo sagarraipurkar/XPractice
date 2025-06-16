@@ -1,0 +1,12 @@
+pageLocators\HomePage.class
+baseComponent\ResuableMethods.class
+pageLocators\Vwo_Login.class
+baseComponent\DriverInitilization.class
+baseComponent\BaseMethod.class
+pageLocators\ResultsPage.class
+test\TestResultPage.class
+baseComponent\TestDataFromExcel.class
+test\LaunchBrowser.class
+test\Practice.class
+baseComponent\SelectCheckinDate.class
+test\Login.class

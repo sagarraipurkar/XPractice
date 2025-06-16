@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-16T15:22:44 IST" name="Suite" finished-at="2025-06-16T15:22:58 IST" duration-ms="13381">
+    <groups>
+      <group name="smoke">
+        <method signature="Practice.ClickOnSearchButtonWithSvg()[pri:0, instance:test.Practice@795cd85e]" name="ClickOnSearchButtonWithSvg" class="test.Practice"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2025-06-16T15:22:44 IST" name="SmokeTest" finished-at="2025-06-16T15:22:58 IST" duration-ms="13381">
+      <class name="test.Practice">
+        <test-method signature="ClickOnSearchButtonWithSvg()[pri:0, instance:test.Practice@795cd85e]" started-at="2025-06-16T15:22:45 IST" name="ClickOnSearchButtonWithSvg" finished-at="2025-06-16T15:22:58 IST" duration-ms="13336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnSearchButtonWithSvg -->
+      </class> <!-- test.Practice -->
+    </test> <!-- SmokeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
