@@ -13,17 +13,19 @@
 		<maven.compiler.target>17</maven.compiler.target>
 		<suiteFile>smoke.xml</suiteFile>
 		<browser>chrome</browser>
-	<!-- <env>qa</env>-->	
+		<!-- <env>qa</env> -->
 	</properties>
 
 	<build>
 		<plugins>
+			<!-- Compiler Plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.14.0</version>
 			</plugin>
 
+			<!-- Surefire Plugin for TestNG -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -34,7 +36,7 @@
 					</suiteXmlFiles>
 					<systemPropertyVariables>
 						<browser>${browser}</browser>
-						<!-- <env>${env}</env>-->
+						<!-- <env>${env}</env> -->
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
@@ -43,8 +45,6 @@
 
 	<dependencies>
 		<!-- Selenium -->
-		<!--
-		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -59,7 +59,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- Apache POI -->
+		<!-- Apache POI (all on 5.4.1) -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -68,12 +68,12 @@
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
-			<version>5.2.3</version>
+			<version>5.4.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml-schemas</artifactId>
-			<version>4.1.2</version>
+			<version>5.4.1</version>
 		</dependency>
 
 		<!-- XMLBeans -->
@@ -83,14 +83,14 @@
 			<version>5.1.1</version>
 		</dependency>
 
-		<!-- Commons Collections -->
+		<!-- Apache Commons Collections -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-collections4</artifactId>
 			<version>4.4</version>
 		</dependency>
 
-		<!-- Log4j -->
+		<!-- Log4j with SLF4J binding -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
@@ -102,10 +102,9 @@
 			<version>2.24.3</version>
 		</dependency>
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-simple</artifactId>
-			<version>2.0.9</version> <!-- match your SLF4J version -->
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j2-impl</artifactId>
+			<version>2.24.3</version>
 		</dependency>
 	</dependencies>
-
 </project>

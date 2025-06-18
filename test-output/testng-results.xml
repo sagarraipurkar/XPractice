@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T15:14:14 IST" name="Default suite" finished-at="2025-06-18T15:14:38 IST" duration-ms="24417">
+  <suite started-at="2025-06-18T15:31:24 IST" name="Default suite" finished-at="2025-06-18T15:31:33 IST" duration-ms="8705">
     <groups>
       <group name="smoke">
-        <method signature="Practice.ClickOnSearchButtonWithSvg()[pri:0, instance:test.Practice@28701274]" name="ClickOnSearchButtonWithSvg" class="test.Practice"/>
+        <method signature="Practice.ClickOnSearchButtonWithSvg()[pri:0, instance:test.Practice@411f53a0]" name="ClickOnSearchButtonWithSvg" class="test.Practice"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-06-18T15:14:14 IST" name="Default test" finished-at="2025-06-18T15:14:38 IST" duration-ms="24417">
+    <test started-at="2025-06-18T15:31:24 IST" name="Default test" finished-at="2025-06-18T15:31:33 IST" duration-ms="8705">
       <class name="test.Practice">
-        <test-method signature="ClickOnSearchButtonWithSvg()[pri:0, instance:test.Practice@28701274]" started-at="2025-06-18T15:14:14 IST" name="ClickOnSearchButtonWithSvg" finished-at="2025-06-18T15:14:38 IST" duration-ms="24352" status="PASS">
+        <test-method signature="ClickOnSearchButtonWithSvg()[pri:0, instance:test.Practice@411f53a0]" started-at="2025-06-18T15:31:24 IST" name="ClickOnSearchButtonWithSvg" finished-at="2025-06-18T15:31:33 IST" duration-ms="8636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickOnSearchButtonWithSvg -->
