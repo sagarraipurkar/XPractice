@@ -26,6 +26,7 @@ public class Practice {
 		ChromeOptions option = new ChromeOptions();
 		FirefoxOptions fireOption = new FirefoxOptions();
 		EdgeOptions edgeOptions = new EdgeOptions();
+		edgeOptions.addArguments("--headless");
 		option.addArguments("--incognito");
 		option.addArguments("--disable-notification");
 
