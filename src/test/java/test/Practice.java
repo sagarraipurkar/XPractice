@@ -112,7 +112,7 @@ public class Practice {
 				break;
 			}
 		}
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("first_name"))).sendKeys("Sagar");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("first_name"))).sendKeys("Vikas");
 		TakesScreenshot src = (TakesScreenshot) driver;
 		File source = src.getScreenshotAs(OutputType.FILE);
 		String timeStamp = new SimpleDateFormat("yyyymmddHHmmss").format(new Date());
